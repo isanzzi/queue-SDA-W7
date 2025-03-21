@@ -14,7 +14,7 @@ void enqueue (Queue *Q, infotype *nilai){
         Q->head = P;
         Q->tail = P;
     } else {
-        Ins_Akhir(&(Q->head), P);
+        Ins_Akhir(&(Q->tail), P);
         Q->tail = P;
     }
     (*nilai)++;
